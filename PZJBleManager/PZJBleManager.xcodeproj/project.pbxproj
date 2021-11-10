@@ -1,0 +1,802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5089A985DE6B46F64F2D19B9 /* Pods_PZJBleManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B33D0D12DDBA4486DF0336 /* Pods_PZJBleManager.framework */; };
+		64AE4C392664A9328F28BD89 /* Pods_PZJBleManager_PZJBleManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391BDE9DFED0E4170788E0C2 /* Pods_PZJBleManager_PZJBleManagerUITests.framework */; };
+		741BAFD92738D3AC009C844C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 741BAFD82738D3AC009C844C /* AppDelegate.m */; };
+		741BAFDC2738D3AC009C844C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 741BAFDB2738D3AC009C844C /* SceneDelegate.m */; };
+		741BAFDF2738D3AC009C844C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 741BAFDE2738D3AC009C844C /* ViewController.m */; };
+		741BAFE22738D3AD009C844C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741BAFE02738D3AD009C844C /* Main.storyboard */; };
+		741BAFE42738D3B9009C844C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741BAFE32738D3B9009C844C /* Assets.xcassets */; };
+		741BAFE72738D3B9009C844C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 741BAFE52738D3B9009C844C /* LaunchScreen.storyboard */; };
+		741BAFEA2738D3B9009C844C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 741BAFE92738D3B9009C844C /* main.m */; };
+		741BAFF42738D3BA009C844C /* PZJBleManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741BAFF32738D3BA009C844C /* PZJBleManagerTests.m */; };
+		741BAFFE2738D3BA009C844C /* PZJBleManagerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741BAFFD2738D3BA009C844C /* PZJBleManagerUITests.m */; };
+		741BB0002738D3BA009C844C /* PZJBleManagerUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 741BAFFF2738D3BA009C844C /* PZJBleManagerUITestsLaunchTests.m */; };
+		741BB00E2738D467009C844C /* PZJBleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 741BB00D2738D467009C844C /* PZJBleManager.m */; };
+		7426B2A7273BA9130041C21D /* ToiletBleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 7426B2A5273BA9130041C21D /* ToiletBleTool.m */; };
+		74926B9F2739062C00D37D13 /* PZJBleDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 74926B9E2739062C00D37D13 /* PZJBleDevice.m */; };
+		74926BA2273911F800D37D13 /* TwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74926BA1273911F800D37D13 /* TwoController.m */; };
+		B09327E7BE312720D4457E1B /* Pods_PZJBleManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E66DC26EE6A8B45325DBE83 /* Pods_PZJBleManagerTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		741BAFF02738D3BA009C844C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 741BAFCC2738D3AC009C844C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 741BAFD32738D3AC009C844C;
+			remoteInfo = PZJBleManager;
+		};
+		741BAFFA2738D3BA009C844C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 741BAFCC2738D3AC009C844C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 741BAFD32738D3AC009C844C;
+			remoteInfo = PZJBleManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25EFF5971CEAB5D78D7972DF /* Pods-PZJBleManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJBleManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-PZJBleManagerTests/Pods-PZJBleManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BA704F23E8CC0DB72ED4CAA /* Pods-PZJBleManager-PZJBleManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJBleManager-PZJBleManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-PZJBleManager-PZJBleManagerUITests/Pods-PZJBleManager-PZJBleManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		391BDE9DFED0E4170788E0C2 /* Pods_PZJBleManager_PZJBleManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PZJBleManager_PZJBleManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A635A4B8BAED6919D537078 /* Pods-PZJBleManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJBleManager.release.xcconfig"; path = "Target Support Files/Pods-PZJBleManager/Pods-PZJBleManager.release.xcconfig"; sourceTree = "<group>"; };
+		607F637D72DA59EAF82840BD /* Pods-PZJBleManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJBleManager.debug.xcconfig"; path = "Target Support Files/Pods-PZJBleManager/Pods-PZJBleManager.debug.xcconfig"; sourceTree = "<group>"; };
+		6E66DC26EE6A8B45325DBE83 /* Pods_PZJBleManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PZJBleManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		741BAFD42738D3AC009C844C /* PZJBleManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PZJBleManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		741BAFD72738D3AC009C844C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		741BAFD82738D3AC009C844C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		741BAFDA2738D3AC009C844C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		741BAFDB2738D3AC009C844C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		741BAFDD2738D3AC009C844C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		741BAFDE2738D3AC009C844C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		741BAFE12738D3AD009C844C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		741BAFE32738D3B9009C844C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		741BAFE62738D3B9009C844C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		741BAFE82738D3B9009C844C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		741BAFE92738D3B9009C844C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		741BAFEF2738D3BA009C844C /* PZJBleManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PZJBleManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		741BAFF32738D3BA009C844C /* PZJBleManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZJBleManagerTests.m; sourceTree = "<group>"; };
+		741BAFF92738D3BA009C844C /* PZJBleManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PZJBleManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		741BAFFD2738D3BA009C844C /* PZJBleManagerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZJBleManagerUITests.m; sourceTree = "<group>"; };
+		741BAFFF2738D3BA009C844C /* PZJBleManagerUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZJBleManagerUITestsLaunchTests.m; sourceTree = "<group>"; };
+		741BB00C2738D467009C844C /* PZJBleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PZJBleManager.h; sourceTree = "<group>"; };
+		741BB00D2738D467009C844C /* PZJBleManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZJBleManager.m; sourceTree = "<group>"; };
+		7426B2A5273BA9130041C21D /* ToiletBleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToiletBleTool.m; sourceTree = "<group>"; };
+		7426B2A6273BA9130041C21D /* ToiletBleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToiletBleTool.h; sourceTree = "<group>"; };
+		74926B9D2739062C00D37D13 /* PZJBleDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PZJBleDevice.h; sourceTree = "<group>"; };
+		74926B9E2739062C00D37D13 /* PZJBleDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PZJBleDevice.m; sourceTree = "<group>"; };
+		74926BA0273911F800D37D13 /* TwoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoController.h; sourceTree = "<group>"; };
+		74926BA1273911F800D37D13 /* TwoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoController.m; sourceTree = "<group>"; };
+		86B33D0D12DDBA4486DF0336 /* Pods_PZJBleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PZJBleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF0D1B88C9239094FBA7C6D /* Pods-PZJBleManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJBleManagerTests.release.xcconfig"; path = "Target Support Files/Pods-PZJBleManagerTests/Pods-PZJBleManagerTests.release.xcconfig"; sourceTree = "<group>"; };
+		E18EDD25198B3AB8CA61DFEC /* Pods-PZJBleManager-PZJBleManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJBleManager-PZJBleManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-PZJBleManager-PZJBleManagerUITests/Pods-PZJBleManager-PZJBleManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		741BAFD12738D3AC009C844C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5089A985DE6B46F64F2D19B9 /* Pods_PZJBleManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		741BAFEC2738D3BA009C844C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B09327E7BE312720D4457E1B /* Pods_PZJBleManagerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		741BAFF62738D3BA009C844C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64AE4C392664A9328F28BD89 /* Pods_PZJBleManager_PZJBleManagerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A4D5BF5B515069A5450B088 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86B33D0D12DDBA4486DF0336 /* Pods_PZJBleManager.framework */,
+				391BDE9DFED0E4170788E0C2 /* Pods_PZJBleManager_PZJBleManagerUITests.framework */,
+				6E66DC26EE6A8B45325DBE83 /* Pods_PZJBleManagerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4140293ABF2C85976B2A3A29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				607F637D72DA59EAF82840BD /* Pods-PZJBleManager.debug.xcconfig */,
+				3A635A4B8BAED6919D537078 /* Pods-PZJBleManager.release.xcconfig */,
+				2BA704F23E8CC0DB72ED4CAA /* Pods-PZJBleManager-PZJBleManagerUITests.debug.xcconfig */,
+				E18EDD25198B3AB8CA61DFEC /* Pods-PZJBleManager-PZJBleManagerUITests.release.xcconfig */,
+				25EFF5971CEAB5D78D7972DF /* Pods-PZJBleManagerTests.debug.xcconfig */,
+				DCF0D1B88C9239094FBA7C6D /* Pods-PZJBleManagerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		741BAFCB2738D3AC009C844C = {
+			isa = PBXGroup;
+			children = (
+				741BAFD62738D3AC009C844C /* PZJBleManager */,
+				741BAFF22738D3BA009C844C /* PZJBleManagerTests */,
+				741BAFFC2738D3BA009C844C /* PZJBleManagerUITests */,
+				741BAFD52738D3AC009C844C /* Products */,
+				4140293ABF2C85976B2A3A29 /* Pods */,
+				0A4D5BF5B515069A5450B088 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		741BAFD52738D3AC009C844C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				741BAFD42738D3AC009C844C /* PZJBleManager.app */,
+				741BAFEF2738D3BA009C844C /* PZJBleManagerTests.xctest */,
+				741BAFF92738D3BA009C844C /* PZJBleManagerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		741BAFD62738D3AC009C844C /* PZJBleManager */ = {
+			isa = PBXGroup;
+			children = (
+				741BAFD72738D3AC009C844C /* AppDelegate.h */,
+				741BAFD82738D3AC009C844C /* AppDelegate.m */,
+				741BAFDA2738D3AC009C844C /* SceneDelegate.h */,
+				741BAFDB2738D3AC009C844C /* SceneDelegate.m */,
+				741BAFDD2738D3AC009C844C /* ViewController.h */,
+				741BAFDE2738D3AC009C844C /* ViewController.m */,
+				74926BA0273911F800D37D13 /* TwoController.h */,
+				74926BA1273911F800D37D13 /* TwoController.m */,
+				741BB00C2738D467009C844C /* PZJBleManager.h */,
+				741BB00D2738D467009C844C /* PZJBleManager.m */,
+				74926B9D2739062C00D37D13 /* PZJBleDevice.h */,
+				74926B9E2739062C00D37D13 /* PZJBleDevice.m */,
+				7426B2A6273BA9130041C21D /* ToiletBleTool.h */,
+				7426B2A5273BA9130041C21D /* ToiletBleTool.m */,
+				741BAFE02738D3AD009C844C /* Main.storyboard */,
+				741BAFE32738D3B9009C844C /* Assets.xcassets */,
+				741BAFE52738D3B9009C844C /* LaunchScreen.storyboard */,
+				741BAFE82738D3B9009C844C /* Info.plist */,
+				741BAFE92738D3B9009C844C /* main.m */,
+			);
+			path = PZJBleManager;
+			sourceTree = "<group>";
+		};
+		741BAFF22738D3BA009C844C /* PZJBleManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				741BAFF32738D3BA009C844C /* PZJBleManagerTests.m */,
+			);
+			path = PZJBleManagerTests;
+			sourceTree = "<group>";
+		};
+		741BAFFC2738D3BA009C844C /* PZJBleManagerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				741BAFFD2738D3BA009C844C /* PZJBleManagerUITests.m */,
+				741BAFFF2738D3BA009C844C /* PZJBleManagerUITestsLaunchTests.m */,
+			);
+			path = PZJBleManagerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		741BAFD32738D3AC009C844C /* PZJBleManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 741BB0032738D3BA009C844C /* Build configuration list for PBXNativeTarget "PZJBleManager" */;
+			buildPhases = (
+				8FE613EAA3D19716EDD929FD /* [CP] Check Pods Manifest.lock */,
+				741BAFD02738D3AC009C844C /* Sources */,
+				741BAFD12738D3AC009C844C /* Frameworks */,
+				741BAFD22738D3AC009C844C /* Resources */,
+				7D7B88842E43916517D55246 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PZJBleManager;
+			productName = PZJBleManager;
+			productReference = 741BAFD42738D3AC009C844C /* PZJBleManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		741BAFEE2738D3BA009C844C /* PZJBleManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 741BB0062738D3BA009C844C /* Build configuration list for PBXNativeTarget "PZJBleManagerTests" */;
+			buildPhases = (
+				F536C02A72647D38D4FB3C6F /* [CP] Check Pods Manifest.lock */,
+				741BAFEB2738D3BA009C844C /* Sources */,
+				741BAFEC2738D3BA009C844C /* Frameworks */,
+				741BAFED2738D3BA009C844C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				741BAFF12738D3BA009C844C /* PBXTargetDependency */,
+			);
+			name = PZJBleManagerTests;
+			productName = PZJBleManagerTests;
+			productReference = 741BAFEF2738D3BA009C844C /* PZJBleManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		741BAFF82738D3BA009C844C /* PZJBleManagerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 741BB0092738D3BA009C844C /* Build configuration list for PBXNativeTarget "PZJBleManagerUITests" */;
+			buildPhases = (
+				392A93D4A585D67DCD67B06F /* [CP] Check Pods Manifest.lock */,
+				741BAFF52738D3BA009C844C /* Sources */,
+				741BAFF62738D3BA009C844C /* Frameworks */,
+				741BAFF72738D3BA009C844C /* Resources */,
+				7AB106E62E95C553E7C76804 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				741BAFFB2738D3BA009C844C /* PBXTargetDependency */,
+			);
+			name = PZJBleManagerUITests;
+			productName = PZJBleManagerUITests;
+			productReference = 741BAFF92738D3BA009C844C /* PZJBleManagerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		741BAFCC2738D3AC009C844C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					741BAFD32738D3AC009C844C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					741BAFEE2738D3BA009C844C = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 741BAFD32738D3AC009C844C;
+					};
+					741BAFF82738D3BA009C844C = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 741BAFD32738D3AC009C844C;
+					};
+				};
+			};
+			buildConfigurationList = 741BAFCF2738D3AC009C844C /* Build configuration list for PBXProject "PZJBleManager" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 741BAFCB2738D3AC009C844C;
+			productRefGroup = 741BAFD52738D3AC009C844C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				741BAFD32738D3AC009C844C /* PZJBleManager */,
+				741BAFEE2738D3BA009C844C /* PZJBleManagerTests */,
+				741BAFF82738D3BA009C844C /* PZJBleManagerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		741BAFD22738D3AC009C844C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741BAFE72738D3B9009C844C /* LaunchScreen.storyboard in Resources */,
+				741BAFE42738D3B9009C844C /* Assets.xcassets in Resources */,
+				741BAFE22738D3AD009C844C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		741BAFED2738D3BA009C844C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		741BAFF72738D3BA009C844C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		392A93D4A585D67DCD67B06F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PZJBleManager-PZJBleManagerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AB106E62E95C553E7C76804 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PZJBleManager-PZJBleManagerUITests/Pods-PZJBleManager-PZJBleManagerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PZJBleManager-PZJBleManagerUITests/Pods-PZJBleManager-PZJBleManagerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PZJBleManager-PZJBleManagerUITests/Pods-PZJBleManager-PZJBleManagerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D7B88842E43916517D55246 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PZJBleManager/Pods-PZJBleManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PZJBleManager/Pods-PZJBleManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PZJBleManager/Pods-PZJBleManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FE613EAA3D19716EDD929FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PZJBleManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F536C02A72647D38D4FB3C6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PZJBleManagerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		741BAFD02738D3AC009C844C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74926BA2273911F800D37D13 /* TwoController.m in Sources */,
+				741BB00E2738D467009C844C /* PZJBleManager.m in Sources */,
+				741BAFDF2738D3AC009C844C /* ViewController.m in Sources */,
+				741BAFD92738D3AC009C844C /* AppDelegate.m in Sources */,
+				7426B2A7273BA9130041C21D /* ToiletBleTool.m in Sources */,
+				74926B9F2739062C00D37D13 /* PZJBleDevice.m in Sources */,
+				741BAFEA2738D3B9009C844C /* main.m in Sources */,
+				741BAFDC2738D3AC009C844C /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		741BAFEB2738D3BA009C844C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741BAFF42738D3BA009C844C /* PZJBleManagerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		741BAFF52738D3BA009C844C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741BAFFE2738D3BA009C844C /* PZJBleManagerUITests.m in Sources */,
+				741BB0002738D3BA009C844C /* PZJBleManagerUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		741BAFF12738D3BA009C844C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 741BAFD32738D3AC009C844C /* PZJBleManager */;
+			targetProxy = 741BAFF02738D3BA009C844C /* PBXContainerItemProxy */;
+		};
+		741BAFFB2738D3BA009C844C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 741BAFD32738D3AC009C844C /* PZJBleManager */;
+			targetProxy = 741BAFFA2738D3BA009C844C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		741BAFE02738D3AD009C844C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				741BAFE12738D3AD009C844C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		741BAFE52738D3B9009C844C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				741BAFE62738D3B9009C844C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		741BB0012738D3BA009C844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		741BB0022738D3BA009C844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		741BB0042738D3BA009C844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 607F637D72DA59EAF82840BD /* Pods-PZJBleManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2R35TK7Z95;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PZJBleManager/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "开启蓝牙以便记录健康";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icarbonx.meum.inedia.PZJBleManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		741BB0052738D3BA009C844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A635A4B8BAED6919D537078 /* Pods-PZJBleManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2R35TK7Z95;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PZJBleManager/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "开启蓝牙以便记录健康";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icarbonx.meum.inedia.PZJBleManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		741BB0072738D3BA009C844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25EFF5971CEAB5D78D7972DF /* Pods-PZJBleManagerTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icarbonx.meum.inedia.PZJBleManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PZJBleManager.app/PZJBleManager";
+			};
+			name = Debug;
+		};
+		741BB0082738D3BA009C844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCF0D1B88C9239094FBA7C6D /* Pods-PZJBleManagerTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icarbonx.meum.inedia.PZJBleManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PZJBleManager.app/PZJBleManager";
+			};
+			name = Release;
+		};
+		741BB00A2738D3BA009C844C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BA704F23E8CC0DB72ED4CAA /* Pods-PZJBleManager-PZJBleManagerUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icarbonx.meum.inedia.PZJBleManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PZJBleManager;
+			};
+			name = Debug;
+		};
+		741BB00B2738D3BA009C844C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E18EDD25198B3AB8CA61DFEC /* Pods-PZJBleManager-PZJBleManagerUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.icarbonx.meum.inedia.PZJBleManagerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PZJBleManager;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		741BAFCF2738D3AC009C844C /* Build configuration list for PBXProject "PZJBleManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741BB0012738D3BA009C844C /* Debug */,
+				741BB0022738D3BA009C844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		741BB0032738D3BA009C844C /* Build configuration list for PBXNativeTarget "PZJBleManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741BB0042738D3BA009C844C /* Debug */,
+				741BB0052738D3BA009C844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		741BB0062738D3BA009C844C /* Build configuration list for PBXNativeTarget "PZJBleManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741BB0072738D3BA009C844C /* Debug */,
+				741BB0082738D3BA009C844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		741BB0092738D3BA009C844C /* Build configuration list for PBXNativeTarget "PZJBleManagerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				741BB00A2738D3BA009C844C /* Debug */,
+				741BB00B2738D3BA009C844C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 741BAFCC2738D3AC009C844C /* Project object */;
+}

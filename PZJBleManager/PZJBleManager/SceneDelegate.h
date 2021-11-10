@@ -1,0 +1,15 @@
+//
+//  SceneDelegate.h
+//  PZJBleManager
+//
+//  Created by 潘志健 on 2021/11/8.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
+
+@property (strong, nonatomic) UIWindow * window;
+
+@end
+
