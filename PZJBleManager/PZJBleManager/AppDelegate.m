@@ -19,6 +19,7 @@
     // Override point for customization after application launch.
     [PZJBleManager  sharedInstance];
 
+    // test  test3 tset4
     return YES;
 }
 

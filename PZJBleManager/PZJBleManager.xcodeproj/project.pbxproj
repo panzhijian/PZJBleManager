@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		5089A985DE6B46F64F2D19B9 /* Pods_PZJBleManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86B33D0D12DDBA4486DF0336 /* Pods_PZJBleManager.framework */; };
+
 		64AE4C392664A9328F28BD89 /* Pods_PZJBleManager_PZJBleManagerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 391BDE9DFED0E4170788E0C2 /* Pods_PZJBleManager_PZJBleManagerUITests.framework */; };
 		7418B688273D093D00D1E37E /* ThreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7418B687273D093D00D1E37E /* ThreeController.m */; };
+
 		741BAFD92738D3AC009C844C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 741BAFD82738D3AC009C844C /* AppDelegate.m */; };
 		741BAFDC2738D3AC009C844C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 741BAFDB2738D3AC009C844C /* SceneDelegate.m */; };
 		741BAFDF2738D3AC009C844C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 741BAFDE2738D3AC009C844C /* ViewController.m */; };
@@ -26,6 +28,7 @@
 		74926BA2273911F800D37D13 /* TwoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74926BA1273911F800D37D13 /* TwoController.m */; };
 		74B3DBAD273E19CF000F55E1 /* libBLTBlueToothSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B3DBA9273E19CF000F55E1 /* libBLTBlueToothSDK.a */; };
 		B09327E7BE312720D4457E1B /* Pods_PZJBleManagerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E66DC26EE6A8B45325DBE83 /* Pods_PZJBleManagerTests.framework */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,14 +49,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		25EFF5971CEAB5D78D7972DF /* Pods-PZJBleManagerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJBleManagerTests.debug.xcconfig"; path = "Target Support Files/Pods-PZJBleManagerTests/Pods-PZJBleManagerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2BA704F23E8CC0DB72ED4CAA /* Pods-PZJBleManager-PZJBleManagerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJBleManager-PZJBleManagerUITests.debug.xcconfig"; path = "Target Support Files/Pods-PZJBleManager-PZJBleManagerUITests/Pods-PZJBleManager-PZJBleManagerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		391BDE9DFED0E4170788E0C2 /* Pods_PZJBleManager_PZJBleManagerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PZJBleManager_PZJBleManagerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A635A4B8BAED6919D537078 /* Pods-PZJBleManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJBleManager.release.xcconfig"; path = "Target Support Files/Pods-PZJBleManager/Pods-PZJBleManager.release.xcconfig"; sourceTree = "<group>"; };
 		607F637D72DA59EAF82840BD /* Pods-PZJBleManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJBleManager.debug.xcconfig"; path = "Target Support Files/Pods-PZJBleManager/Pods-PZJBleManager.debug.xcconfig"; sourceTree = "<group>"; };
 		6E66DC26EE6A8B45325DBE83 /* Pods_PZJBleManagerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PZJBleManagerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7418B686273D093D00D1E37E /* ThreeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeController.h; sourceTree = "<group>"; };
 		7418B687273D093D00D1E37E /* ThreeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeController.m; sourceTree = "<group>"; };
+
 		741BAFD42738D3AC009C844C /* PZJBleManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PZJBleManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		741BAFD72738D3AC009C844C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		741BAFD82738D3AC009C844C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -95,8 +96,6 @@
 		74B3DBAB273E19CF000F55E1 /* BLTConstantDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTConstantDefine.h; sourceTree = "<group>"; };
 		74B3DBAC273E19CF000F55E1 /* BLTBlueToothSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLTBlueToothSDK.h; sourceTree = "<group>"; };
 		86B33D0D12DDBA4486DF0336 /* Pods_PZJBleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PZJBleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCF0D1B88C9239094FBA7C6D /* Pods-PZJBleManagerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJBleManagerTests.release.xcconfig"; path = "Target Support Files/Pods-PZJBleManagerTests/Pods-PZJBleManagerTests.release.xcconfig"; sourceTree = "<group>"; };
-		E18EDD25198B3AB8CA61DFEC /* Pods-PZJBleManager-PZJBleManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PZJBleManager-PZJBleManagerUITests.release.xcconfig"; path = "Target Support Files/Pods-PZJBleManager-PZJBleManagerUITests/Pods-PZJBleManager-PZJBleManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +112,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B09327E7BE312720D4457E1B /* Pods_PZJBleManagerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +119,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64AE4C392664A9328F28BD89 /* Pods_PZJBleManager_PZJBleManagerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				86B33D0D12DDBA4486DF0336 /* Pods_PZJBleManager.framework */,
-				391BDE9DFED0E4170788E0C2 /* Pods_PZJBleManager_PZJBleManagerUITests.framework */,
-				6E66DC26EE6A8B45325DBE83 /* Pods_PZJBleManagerTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,10 +138,6 @@
 			children = (
 				607F637D72DA59EAF82840BD /* Pods-PZJBleManager.debug.xcconfig */,
 				3A635A4B8BAED6919D537078 /* Pods-PZJBleManager.release.xcconfig */,
-				2BA704F23E8CC0DB72ED4CAA /* Pods-PZJBleManager-PZJBleManagerUITests.debug.xcconfig */,
-				E18EDD25198B3AB8CA61DFEC /* Pods-PZJBleManager-PZJBleManagerUITests.release.xcconfig */,
-				25EFF5971CEAB5D78D7972DF /* Pods-PZJBleManagerTests.debug.xcconfig */,
-				DCF0D1B88C9239094FBA7C6D /* Pods-PZJBleManagerTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -267,7 +258,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 741BB0062738D3BA009C844C /* Build configuration list for PBXNativeTarget "PZJBleManagerTests" */;
 			buildPhases = (
-				F536C02A72647D38D4FB3C6F /* [CP] Check Pods Manifest.lock */,
 				741BAFEB2738D3BA009C844C /* Sources */,
 				741BAFEC2738D3BA009C844C /* Frameworks */,
 				741BAFED2738D3BA009C844C /* Resources */,
@@ -286,11 +276,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 741BB0092738D3BA009C844C /* Build configuration list for PBXNativeTarget "PZJBleManagerUITests" */;
 			buildPhases = (
-				392A93D4A585D67DCD67B06F /* [CP] Check Pods Manifest.lock */,
 				741BAFF52738D3BA009C844C /* Sources */,
 				741BAFF62738D3BA009C844C /* Frameworks */,
 				741BAFF72738D3BA009C844C /* Resources */,
-				7AB106E62E95C553E7C76804 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -372,45 +360,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		392A93D4A585D67DCD67B06F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PZJBleManager-PZJBleManagerUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7AB106E62E95C553E7C76804 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PZJBleManager-PZJBleManagerUITests/Pods-PZJBleManager-PZJBleManagerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PZJBleManager-PZJBleManagerUITests/Pods-PZJBleManager-PZJBleManagerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PZJBleManager-PZJBleManagerUITests/Pods-PZJBleManager-PZJBleManagerUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7D7B88842E43916517D55246 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,28 +393,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-PZJBleManager-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F536C02A72647D38D4FB3C6F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-PZJBleManagerTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -664,6 +591,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 2R35TK7Z95;
+
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PZJBleManager/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "开启蓝牙以便记录健康";
@@ -697,8 +625,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = 2R35TK7Z95;
+
+	
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PZJBleManager/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "开启蓝牙以便记录健康";
@@ -727,7 +658,6 @@
 		};
 		741BB0072738D3BA009C844C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25EFF5971CEAB5D78D7972DF /* Pods-PZJBleManagerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -750,7 +680,6 @@
 		};
 		741BB0082738D3BA009C844C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCF0D1B88C9239094FBA7C6D /* Pods-PZJBleManagerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -773,7 +702,6 @@
 		};
 		741BB00A2738D3BA009C844C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BA704F23E8CC0DB72ED4CAA /* Pods-PZJBleManager-PZJBleManagerUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -794,7 +722,6 @@
 		};
 		741BB00B2738D3BA009C844C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E18EDD25198B3AB8CA61DFEC /* Pods-PZJBleManager-PZJBleManagerUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
