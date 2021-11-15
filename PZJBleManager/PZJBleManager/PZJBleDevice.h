@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///信号强度
 @property (assign, nonatomic) NSInteger rssi;
 
+
 @property (strong, nonatomic) CBPeripheral *cbPeripheral;
 
 @property (strong, nonatomic) CBCharacteristic *writingChar;

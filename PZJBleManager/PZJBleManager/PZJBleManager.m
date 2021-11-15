@@ -25,8 +25,11 @@ extern NSString * const kCCCustomServiceUUID;
 {
     self = [super init];
     if (self) {
+        
+//        不填或者为NO
+//        NSDictionary *dic = @{CBCentralManagerOptionShowPowerAlertKey:@NO};
 
-        self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_main_queue()];
+        self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:dispatch_get_main_queue() options:nil];
         _scannedPeripherals = [NSMutableArray new];
 
     }
@@ -37,8 +40,13 @@ extern NSString * const kCCCustomServiceUUID;
     if (central.state == CBCentralManagerStatePoweredOn) {
         self.bleOpened=YES;
         NSLog(@"蓝牙状态正常!!!");
+    }else if(central.state == CBCentralManagerStatePoweredOff){
+        // 可以在这里自定义弹窗
+        NSLog(@"蓝牙没有打开!!!");
+        self.bleOpened=NO;
+
     }else{
-        NSLog(@"蓝牙状态异常!!!");
+        NSLog(@"蓝牙状态其他异常%ld!!!",central.state );
         self.bleOpened=NO;
     }
     
@@ -58,9 +66,8 @@ extern NSString * const kCCCustomServiceUUID;
 //    self.scanSuccessBlock = scanSuccessBlock;
     self.filterName=filterName;
     //     1:重连已知的 peripeheral 列表中的peripeheral (以前发现的,或者以前连接过的)
-//    NSUUID *uuid= [[NSUUID alloc] initWithUUIDString:@"774FE1FC-9BB6-D4E0-E0E0-2A3AB75B34E1"];
-//    NSUUID *uuid2= [[NSUUID alloc] initWithUUIDString:@"411EC50D-6231-A8BA-B061-F3ADFF6DE149"];
-//    NSArray *connectedPeripherals1 =[self.centralManager  retrievePeripheralsWithIdentifiers:@[uuid2]];
+//    NSUUID *uuid1= [[NSUUID alloc] initWithUUIDString:@"411EC50D-6231-A8BA-B061-F3ADFF6DE149"];
+//    NSArray *connectedPeripherals1 =[self.centralManager  retrievePeripheralsWithIdentifiers:@[uuid1]];
 //    NSLog(@"以前发现的,或者以前连接过的%@",connectedPeripherals1);
 //   CBPeripheral *per=connectedPeripherals1[0];
 //    PZJBleDevice *deviece= [self deviceWrapperByPeripheral:per];
@@ -82,6 +89,9 @@ extern NSString * const kCCCustomServiceUUID;
     
     
     //扫描未连接的设备
+    //不重复扫描已发现设备
+//    NSDictionary *option = @{CBCentralManagerScanOptionAllowDuplicatesKey : [NSNumber numberWithBool:NO]};
+
 //    NSArray * services = [NSArray arrayWithObjects:[CBUUID UUIDWithString:@"1"],nil];
     [self.centralManager scanForPeripheralsWithServices:nil options:nil];
 
@@ -100,7 +110,7 @@ extern NSString * const kCCCustomServiceUUID;
      advertisementData:(NSDictionary *)advertisementData
                   RSSI:(NSNumber *)RSSI
 {
-        NSLog(@"发现的设备====%@",peripheral);
+        NSLog(@"发现的设备====%@  advertisementData===%@",peripheral,advertisementData);
 
         PZJBleDevice *device = [self deviceWrapperByPeripheral:peripheral];
         device.rssi = RSSI.integerValue;
@@ -162,17 +172,18 @@ extern NSString * const kCCCustomServiceUUID;
 {
     self.connectSuccessBlock = connectSuccessBlock;
     self.connectFailBlock  = connectFailBlock;
-    [self.centralManager connectPeripheral:device.cbPeripheral options:nil];
+    // 全局变量
+    self.saveDevice=device;
+    self.deviceIdentifier=self.saveDevice.cbPeripheral.identifier.UUIDString;
+    [self.centralManager connectPeripheral:self.saveDevice.cbPeripheral options:nil];
 
 }
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
 
     NSLog(@"didConnectPeripheral 连接成功!!!!");
-    self.saveDevice= [self deviceWrapperByPeripheral:peripheral];
-    self.deviceIdentifier=peripheral.identifier.UUIDString;
     
-     [[NSUserDefaults standardUserDefaults] setObject:self.deviceIdentifier forKey:peripheral.name];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+//     [[NSUserDefaults standardUserDefaults] setObject:self.deviceIdentifier forKey:peripheral.name];
+//    [[NSUserDefaults standardUserDefaults] synchronize];
     
 // 需要全局变量
    [self.saveDevice didDiscoverServices];
@@ -185,7 +196,7 @@ extern NSString * const kCCCustomServiceUUID;
 
 
 
-
+// 连接失败  可以去重新扫描,扫描成功发现服务和特征
 - (void)centralManager:(CBCentralManager *)central didFailToConnectPeripheral:(CBPeripheral *)peripheral  error:(nullable NSError *)error{
     NSLog(@"didFailToConnectPeripheral  连接失败!!!! %@",error);
     if (self.connectFailBlock) self.connectFailBlock(error);
@@ -194,6 +205,9 @@ extern NSString * const kCCCustomServiceUUID;
 
 // 后台扫描设备跟前台扫描周围设备有一点不同：
 //       也许是考虑到功耗的原因，在后台只能搜索特定的设备，所以必须要传Service UUID。不传的 话一台设备都搜不到。而这时就需要外设在广播包中有Service UUID，需要广播包中含有。
+//有些朋友可能会遇到这种的情况：传nil可以搜到，传UUID却搜不到，而且是明确知道该设备包含了该服务的。
+//，传nil代表搜索周围的全部设备；传UUID代表搜索包含该服务的特定设备。
+//有些朋友可能会遇到这种的情况：传nil可以搜到，传UUID却搜不到，而且是明确知道该设备包含了该服务的。
 - (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(nullable NSError *)error{
     NSLog(@"didDisconnectPeripheral  断开连接!!!!  %@",error);
     self.saveDevice=nil;
@@ -201,13 +215,17 @@ extern NSString * const kCCCustomServiceUUID;
     // 更改下状态
     self.isConnected=NO;
     
-    
     //如果是异常断开才需要自动重连 主动断开error为空
-    if (error) {
-        [self performSelector:@selector(retryConnectToDevice) withObject:self afterDelay:0.5];
-    }
-    
+//    if (error) {
+//        [self performSelector:@selector(retryConnectToDevice) withObject:self afterDelay:0.5];
+//    }
+//
 
+}
+//在蓝牙于后台被杀掉时，重连之后会首先调用此方法，可以获取蓝牙恢复时的各种状态
+- (void)centralManager:(CBCentralManager *)central willRestoreState:(NSDictionary<NSString *, id> *)dict
+{
+    
 }
 
 /** 重试连接设备 */

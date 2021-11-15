@@ -51,7 +51,7 @@
     self.tableV.delegate=self;
     self.tableV.rowHeight=60;
     
-    
+
     
     [[PZJBleManager sharedInstance] startBleScanWithInterval:2 filterName:@"B" scanSuccessBlock:^(NSMutableArray *deviceArr) {
         self.deviceArr=deviceArr;
