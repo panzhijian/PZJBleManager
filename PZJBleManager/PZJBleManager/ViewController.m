@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-//@import Charts;
+@import Charts;
 // test2
 
 @interface ViewController ()
@@ -18,9 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    BarChartView  *chart=[[BarChartView alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
-//    [self.view addSubview:chart];
-//
+    BarChartView  *chart=[[BarChartView alloc]initWithFrame:CGRectMake(100, 100, 200, 200)];
+    [self.view addSubview:chart];
+
     
  
     
