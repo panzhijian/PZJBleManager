@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-@import Charts;
+//@import Charts;
 // test2
 
 @interface ViewController ()
